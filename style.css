@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: sans-serif;
+  color: #ffffff;
+}
+
+body {
+  background: #808080;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  padding: 3%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: #6495ed;
+  padding: 30px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+input {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px #808080 solid;
+  background: #3b6163;
+  font-size: 20px;
+  transition: 0.3s;
+  width: 100%;
+}
+
+.output {
+  background: #000000;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.block-one {
+  display: flex;
+}
+
+.block-one input {
+  background: #2a4446;
+}
+
+.block-one input:hover,
+.block-one input:focus {
+  outline: red 1px solid;
+}
+
+.block-two {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.block-two input:nth-last-child(1) {
+  background: #860000;
+}
+
+.block-two input:nth-last-child(1):hover {
+  background: #9c0000be;
+}
+
+.block-two input:nth-last-child(1):active {
+  background: #860000;
+}
+
+.block-two input {
+  cursor: pointer;
+}
+
+.block-two input:hover {
+  background: #3b6163b6;
+}
+
+.block-two input:active {
+  background: #3b6163;
+}
